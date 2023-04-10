@@ -4,6 +4,7 @@ import { MusicGenderSelect, TempoSelect } from './select'
 import Image from 'next/image'
 import OutputResult from './outputResult'
 import { ArtistFollowersField, ArtistNumberField, DurationField, VolumeField } from './textField'
+
 export default function Simulator() {
   return (
     <div className="flex items-center justify-center md:h-screen -mt-12 w-full h-full">

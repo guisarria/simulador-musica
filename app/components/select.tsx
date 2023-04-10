@@ -20,7 +20,7 @@ export function TempoSelect() {
           <InputLabel sx={{}} id="tempo-select" className="text-white text-lg -mt-2">
             Tempo
           </InputLabel>
-          <Select style={{ height: 45, borderRadius: 25 }} labelId="tempo-select" id="tempo-select" value={tempo} label="Tempo" onChange={handleChange} className="bg-black/40 text-white text-left">
+          <Select style={{ height: 45, borderRadius: 25 }} labelId="tempo" id="tempo" value={tempo} label="Tempo" onChange={handleChange} className="bg-black/40 text-white text-left">
             <MenuItem value={10}>Ten</MenuItem>
             <MenuItem value={20}>Twenty</MenuItem>
             <MenuItem value={30}>Thirty</MenuItem>
@@ -28,7 +28,7 @@ export function TempoSelect() {
         </FormControl>
       </Box>
       <div className="flex pt-4">
-        <span className="relative overflow-hidden cursor-pointer group hover:overflow-visible focus-visible:outline-none" aria-describedby="tooltip-03">
+        <span className="relative overflow-hidden cursor-pointer group hover:overflow-visible focus-visible:outline-none" aria-describedby="tempo">
           <svg width="20" height="20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="50" cy="50" r="50" fill="#0E002B" />
             <path
@@ -38,7 +38,7 @@ export function TempoSelect() {
           </svg>
           <span
             role="tooltip"
-            id="tooltip-03"
+            id="tempo"
             className="invisible absolute left-6 top-1/2 z-10 ml-2 -mt-3 w-48 -translate-y-1/2 rounded bg-blue-950 p-4 text-sm text-white opacity-0 transition-all before:invisible before:absolute before:top-1/2 before:right-full before:z-10 before:ml-2 before:-mt-2 before:border-y-8 before:border-r-8 before:border-y-transparent before:border-r-blue-950 before:opacity-0 before:transition-all before:content-[''] group-hover:visible group-hover:block group-hover:opacity-100 group-hover:before:visible group-hover:before:opacity-100"
           >
             O tempo geral estimado de uma faixa em batidas por minuto (BPM). Na terminologia musical, tempo é a velocidade ou ritmo de uma determinada peça e deriva diretamente da duração média da
@@ -73,9 +73,26 @@ export function MusicGenderSelect() {
             onChange={handleChange}
             className="bg-black/40 text-white text-left"
           >
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
+            <MenuItem value={0}>Pop</MenuItem>
+            <MenuItem value={0}>Funk</MenuItem>
+            <MenuItem value={0}>Gospel</MenuItem>
+            <MenuItem value={0}>MPB</MenuItem>
+            <MenuItem value={0}>Reggae</MenuItem>
+            <MenuItem value={0}>Arrocha</MenuItem>
+            <MenuItem value={0}>Axe</MenuItem>
+            <MenuItem value={0}>Disco</MenuItem>
+            <MenuItem value={0}>Forro</MenuItem>
+            <MenuItem value={0}>Frevo</MenuItem>
+            <MenuItem value={0}>Hip-Hop</MenuItem>
+            <MenuItem value={0}>Indie</MenuItem>
+            <MenuItem value={0}>Metal</MenuItem>
+            <MenuItem value={0}>Pagode</MenuItem>
+            <MenuItem value={0}>Rap</MenuItem>
+            <MenuItem value={0}>Rock</MenuItem>
+            <MenuItem value={0}>Samba</MenuItem>
+            <MenuItem value={0}>Sertanejo</MenuItem>
+            <MenuItem value={0}>Soul</MenuItem>
+            <MenuItem value={0}>Trap</MenuItem>
           </Select>
         </FormControl>
       </Box>
