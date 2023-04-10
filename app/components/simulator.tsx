@@ -1,5 +1,4 @@
 import { AcousticCheck, DancingCheck, EnergeticCheck, ExplicitCheck, InstrumentalCheck, SpokenCheck, WithValenceCheck, WithVivacityCheck } from './checkbox'
-import Chart from './chart'
 import { MusicGenderSelect, TempoSelect } from './select'
 import Image from 'next/image'
 import OutputResult from './outputResult'
