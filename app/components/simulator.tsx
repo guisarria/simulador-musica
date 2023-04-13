@@ -18,6 +18,7 @@ import {
   ArtistFollowersField,
   ArtistNumberField,
   DurationField,
+  TempoField,
 } from "./textField";
 
 export default function Simulator() {
@@ -74,7 +75,8 @@ export default function Simulator() {
               parameters${activeTab === 1 ? " active" : ""}
           `}
                 >
-                  <TempoSelect />
+                  {/* <TempoSelect /> */}
+                  <TempoField />
                   <DurationField />
                   <ArtistNumberField />
                   <MusicGenderSelect />

@@ -2,6 +2,28 @@
 import Box from "@mui/material/Box";
 import TextField from "@mui/material/TextField";
 
+export function TempoField() {
+  return (
+    <Box
+      component="form"
+      sx={{
+        width: "20ch",
+      }}
+      noValidate
+      autoComplete="off"
+      className="m-0 md:my-2 -ml-7"
+    >
+      <TextField
+        sx={{}}
+        id="outlined-basic"
+        label="Tempo"
+        variant="outlined"
+        className="bg-black/40 rounded-md h-13 ml-3"
+      />
+    </Box>
+  );
+}
+
 export function DurationField() {
   return (
     <Box
