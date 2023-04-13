@@ -18,7 +18,6 @@ import {
   ArtistFollowersField,
   ArtistNumberField,
   DurationField,
-  VolumeField,
 } from "./textField";
 
 export default function Simulator() {
@@ -40,7 +39,7 @@ export default function Simulator() {
   };
 
   return (
-    <div className="flex items-center justify-center md:h-screen md:-mt-12 w-full h-full sm:h-[calc(100%-3.7rem)]">
+    <div className="flex items-center justify-center md:h-screen md:mt-[-3.2rem] w-full h-full sm:h-[calc(100%-3.7rem)]">
       <div className="bg-black/40 rounded-3xl shadow-xl w-full h-[85%] m-0 p-0 md:max-w-screen-2xl sm:h-[90%] lg:px-56 py-8 lg:mt-10 backdrop-blur-sm">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 text-center text-white">
           Popularidade de Músicas
@@ -52,12 +51,12 @@ export default function Simulator() {
           <div className="flex-1 text-center sm:flex-[.75] md:flex-1 xl:flex-[100%] md:mr-0 xl:mr-20 md:mb-5 h-full">
             <div className="flex-row md:-ml-16 h-full md:h-auto">
               <div
-                className={`flex content-center justify-center h-[calc(80% - 48px)]
+                className={`flex flex-col items-center sm:flex-row content-center justify-center h-[calc(80% - 48px)]
               options-parameters${activeTab < 2 ? " active" : ""}
   `}
               >
                 <div
-                  className={`md:align-baseline sm:visible flex flex-col sm:opacity-100 sm:left-auto sm:w-fit sm:h-auto relative opacity-0 invisible w-0 h-0 m-0 overflow-hidden md:pr-26 md:min-w-[280px] h-full
+                  className={`w-fit items-start md:w-full md:align-baseline sm:visible flex flex-col sm:opacity-100 sm:left-auto sm:w-fit sm:h-auto relative opacity-0 invisible h-0 m-0 overflow-hidden md:pr-26 md:min-w-[280px]
               options${activeTab === 0 ? " active" : ""}
           `}
                 >
@@ -80,7 +79,6 @@ export default function Simulator() {
                   <ArtistNumberField />
                   <MusicGenderSelect />
                   <ArtistFollowersField />
-                  <VolumeField />
                 </div>
               </div>
               <button className="bg-blue-950/80 border-2 border-white px-16 py-2 md:mb-0 font-extralight text-xl rounded-full text-white text-center mt-4 md:-ml-40 md:mb-10 md:mt-6">
