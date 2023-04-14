@@ -21,7 +21,7 @@ export function TempoSelect() {
             Tempo
           </InputLabel>
           <Select style={{ height: 45, borderRadius: 25 }} labelId="tempo" id="tempo" value={tempo} label="Tempo" onChange={handleChange} className="bg-black/40 text-white text-left">
-            <MenuItem value={10}>Ten</MenuItem>
+            <MenuItem value={10}>120 BPM</MenuItem>
             <MenuItem value={20}>Twenty</MenuItem>
             <MenuItem value={30}>Thirty</MenuItem>
           </Select>

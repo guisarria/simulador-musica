@@ -36,7 +36,7 @@ export default function Simulator() {
               <button className="bg-blue-950/80 border-2 border-white px-16 py-2 md:mb-0 font-extralight text-xl rounded-full text-white text-center md:-ml-40 mb-10 mt-6">Gerar</button>
             </div>
           </div>
-          <div className="flex-2 flex-col items-center content-center justify-center text-center h-72 md:-mr-40">
+          <div className="flex flex-col items-center content-center justify-center text-center h-72 md:-mr-40">
             <OutputResult />
           </div>
         </div>

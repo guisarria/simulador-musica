@@ -64,3 +64,11 @@ label.Mui-focused {
 .MuiInputLabel-root {
  color: white;
 }
+
+ .result-text .MuiInputLabel-root {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  margin: -1rem 0rem 0 3rem;
+ }
+ 

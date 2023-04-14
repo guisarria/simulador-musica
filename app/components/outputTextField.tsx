@@ -15,7 +15,7 @@ export default function OutputTextField() {
       noValidate
       autoComplete="off"
     >
-      <TextField sx={{}} id="outlined-basic" label="" variant="outlined" className="bg-black/40 rounded-full h-16 align-middle mt-6 -ml-11" />
+      <TextField sx={{}} id="outlined-basic" label="90%" variant="outlined" className="bg-black/40 rounded-full h-16 align-middle mt-6 -ml-11 result-text" />
     </Box>
   )
 }
