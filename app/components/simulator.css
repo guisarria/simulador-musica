@@ -16,8 +16,6 @@
     visibility: visible;
     width: auto;
     height: calc(84% - 48px);
-    /* padding: 0;
-    margin: 0; */
   }
 
   .parametersBtn,
@@ -45,18 +43,11 @@
 
   .options {
     align-items: center;
-
-    /* background-color: rgba(255, 255, 255, 0.8); */
-    /* backdrop-filter: saturate(180%) blur(15px); */
-    /* padding: 20px; */
     height: 800px;
-    width: fit-content;
-    /* border-right: 2px solid #dadada; */
     left: -100%;
     transition: 0.4s left linear;
     margin-bottom: 10px;
     padding: 0;
-    height: 100%;
   }
 
   .results {
@@ -73,61 +64,42 @@
 
   .parameters.active {
     display: flex;
-    flex: 100%;
-    /* background: white; */
+    flex: .8;
     flex-direction: column;
     opacity: 1;
     justify-content: space-between;
     height: 100%;
     visibility: visible;
     z-index: 1;
-    width: 100vw;
     max-height: 800px;
-    /* min-height: 420px; */
     left: 0;
   }
 
   .options.active {
     display: flex;
-    /* flex: unset; */
-
-    /* background: white; */
     flex-direction: column;
     opacity: 1;
     visibility: visible;
     z-index: 1;
-    width: 100%;
-    justify-content: space-evenly;
     justify-content: space-around;
     max-height: 800px;
     left: 0;
-    min-width: 360px;
+    align-items: flex-start;
     height: 100%;
-    /* min-height: 420px; */
   }
 
   .results.active {
     display: flex;
-    /* flex: unset; */
-    /* flex: 100%; */
-
-    /* background: white; */
     flex-direction: column;
     opacity: 1;
     visibility: visible;
     z-index: 1;
-    width: fit-content;
-    justify-content: space-evenly;
-    justify-content: space-around;
     max-height: 800px;
     left: 0;
     min-width: 360px;
     width: 100%;
-height: calc(84% - 48px);
-    /* min-height: 420px; */
-    justify-content: center;
+    height: calc(84% - 48px);
     order: -1;
     justify-content: center;
-    /* margin-top: -70px; */
   }
 }
