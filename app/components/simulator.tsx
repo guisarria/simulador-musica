@@ -12,7 +12,7 @@ import {
   WithVivacityCheck,
 } from "./checkbox";
 import OutputResult from "./outputResult";
-import { MusicGenderSelect, TempoSelect } from "./select";
+import { MusicGenderSelect } from "./select";
 import "./simulator.css";
 import {
   ArtistFollowersField,
@@ -41,15 +41,15 @@ export default function Simulator() {
 
   return (
     <div className="flex items-center justify-center md:h-screen md:mt-[-3.2rem] w-full h-full sm:h-[calc(100%-3.7rem)]">
-      <div className="bg-black/40 rounded-3xl shadow-xl w-full h-[85%] m-0 p-0 md:max-w-screen-2xl sm:h-[90%] lg:px-56 py-8 lg:mt-10 backdrop-blur-sm">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-2 text-center text-white">
+      <div className="bg-black/40 rounded-3xl shadow-xl w-full h-[99%] mx-1 sm:m-8 p-0 md:max-w-screen-2xl lg:h-auto sm:h-[90%] lg:px-56 py-8 lg:mt-10 backdrop-blur-sm">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2 text-center text-white">
           Popularidade de Músicas
         </h1>
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-extra light mb-4 md:mb-6 text-center text-white">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extralight mb-4 md:mb-6 text-center text-white">
           Simulador by Cognitive
         </h2>
-        <div className="flex sm:w-full lg:flex-row xl:w-full lg:mt-12 md:items-center flex-col content-center justify-center h-full md:h-auto">
-          <div className="flex-1 text-center sm:flex-[.75] md:flex-1 xl:flex-[100%] md:mr-0 xl:mr-20 md:mb-5 h-full">
+        <div className="flex sm:w-full lg:flex-row xl:w-full lg:mt-12 md:items-center lg:items-start flex-col content-center justify-center h-full md:h-auto">
+          <div className="flex-1 text-center sm:flex-[.75] md:flex-1 md:mr-0 xl:mr-20 md:mb-5 h-full">
             <div className="flex-row md:-ml-16 h-full md:h-auto">
               <div
                 className={`flex flex-col items-center sm:flex-row content-center justify-center h-[calc(80% - 48px)]
@@ -71,7 +71,7 @@ export default function Simulator() {
                   <ExplicitCheck />
                 </div>
                 <div
-                  className={`flex-1 sm:flex-[unset] md:pr-10 flex flex-col justify-center items-center
+                  className={`flex-1 w-full sm:flex-[unset] md:pr-10 flex flex-col justify-center items-center
               parameters${activeTab === 1 ? " active" : ""}
           `}
                 >

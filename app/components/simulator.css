@@ -71,7 +71,6 @@
     height: 100%;
     visibility: visible;
     z-index: 1;
-    width: 100vw;
     max-height: 800px;
     left: 0;
   }
